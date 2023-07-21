@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "416028609109",
+    "project_id": "wedoctors-acfa5",
+    "storage_bucket": "wedoctors-acfa5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416028609109:android:f09d18394e85575c9622dc",
+        "android_client_info": {
+          "package_name": "com.abhishek_jo.weDoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416028609109-7hl2t5qgc6qd1bib4pqcgo18deejert0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abhishek_jo.weDoctor",
+            "certificate_hash": "dca6f3d6c57d94d9959c58b1a904aac8c9d882ca"
+          }
+        },
+        {
+          "client_id": "416028609109-6f7tv2apfchnhp91e8cinnu69cicm5cm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7FbAQqGU7RTXiXShCPkLXbG1Dw9fwkSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416028609109-6f7tv2apfchnhp91e8cinnu69cicm5cm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

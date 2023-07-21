@@ -1,0 +1,87 @@
+.text-complement {
+  height: 100px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.input-group-1 {
+  width: 100px;
+}
+.product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buy-now-men {
+  width: 86px;
+}
+.product-box-scroll .text-muted-center {
+  height: 50px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.button-hire-now {
+  width: 90px;
+}
+.button-content-reject {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.accept-button {
+  width: 90px;
+  height: 35px;
+  border-radius: 20px;
+  text-align: center;
+
+  font-size: 16px;
+  background-color: rgb(75, 197, 50);
+  border: 1px solid greenyellow;
+  /* margin-left: 30px; */
+}
+.reject-button {
+  width: 90px;
+  height: 35px;
+  border-radius: 20px;
+  text-align: center;
+  right: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: rgb(253, 86, 8);
+  border: 1px solid red;
+}
+.img__logo {
+  width: 90px;
+  height: 40px;
+}
+.date_picker {
+  display: flex;
+  flex-direction: row;
+}
+.date__pick {
+  width: 80px;
+}
+.bid__now {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.input__bid {
+  width: 150px;
+}
+.bid__but {
+  width: 90px;
+}
+button.hammer__bid {
+  background-color: aliceblue;
+  color: black;
+}
+button.hammer__bid:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,95 @@
+import gql from 'graphql-tag';
+
+/* get getMstCategoryByParentId query */
+const getResponseItems = gql`
+query getResponseItems($id: ID){
+    getResponseItems(id:$id){
+        comment,
+        companyId,
+        createdBy,
+        createdDate,
+        isAccepted,
+        isActive,
+        isRejected,
+        itemRequestId,
+        itemResponseId,
+        modifiedBy,
+        modifiedDate,
+        replyToId,
+        responseDate,
+        userId
+        mapItemResponseUpload{
+        createdBy,
+        createdDate,
+        documentName,
+        irUploadId,
+        isActive,
+        itemResponseId,
+        modifiedBy,
+        modifiedDate,
+        uploadPath
+        }
+        replyTo{
+        comment,
+        companyId,
+        createdBy,
+        createdDate,
+        isAccepted,
+        isActive,
+        isRejected,
+        itemRequestId,
+        itemResponseId,
+        modifiedBy,
+        modifiedDate,
+        replyToId,
+        responseDate,
+        userId,
+        replyTo{
+        comment,
+        companyId,
+        createdBy,
+        createdDate,
+        isAccepted,
+        isActive,
+        isRejected,
+        itemRequestId,
+        itemResponseId,
+        modifiedBy,
+        modifiedDate,
+        replyToId,
+        responseDate,
+        userId,
+        replyTo{
+        comment,
+        companyId,
+        createdBy,
+        createdDate,
+        isAccepted,
+        isActive,
+        isRejected,
+        itemRequestId,
+        itemResponseId,
+        modifiedBy,
+        modifiedDate,
+        replyToId,
+        responseDate,
+        userId
+        }
+        }
+        mapItemResponseUpload{
+        createdBy,
+        createdDate,
+        documentName,
+        irUploadId,
+        isActive,
+        itemResponseId,
+        modifiedBy,
+        modifiedDate,
+        uploadPath
+        }
+    }
+     }
+   }
+`;
+
+export default getResponseItems;

@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "2ebd41f8-c739-4249-a9b2-176290edd0ef",
+		"name": "career",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17462793"
+	},
+	"item": [
+		{
+			"name": "post-career",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jobTitle\": \"HIJK\",\r\n    \"company\": \"kotak\",\r\n    \"workplaceType\": \"LNN\",\r\n    \"location\": \"bmc\",\r\n    \"description\": \"lorem ipsum\",\r\n    \"jobType\": \"full_time\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/career",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"career"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-career",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/career",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"career"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "4fc34697-b1c1-4a17-8350-5a1634694e64",
+		"name": "membership",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17462793"
+	},
+	"item": [
+		{
+			"name": "post-membership-plan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"abhishek\",\"duration\":\"6\",\"amount\":2500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/membership/plan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"membership",
+						"plan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put-membership-plan",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"abhishek\",\"duration\":\"6\",\"amount\":23,\"id\": \"63a4053af26aeb2af033165f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/membership/plan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"membership",
+						"plan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-membership-plan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"abhishek\",\"duration\":\"6\",\"amount\":23,\"id\": \"63a4053af26aeb2af033165f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/membership/plan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"membership",
+						"plan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-membership",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"abhishe pawar\",\r\n    \"associationName\": \"baner\",\r\n    \"buyDate\": \"2022-10-11T18:30:00.000Z\",\r\n    \"expiryDate\": \"2022-10-11T18:30:00.000Z\",\r\n    \"status\": \"running\",\r\n    \"plan\": \"63a4053af26aeb2af033165f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/membership",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"membership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-membership",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"membershipId\": \"63a29caf2f32d7384c254a70\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/membership",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"membership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-membership",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/membership",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"membership"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

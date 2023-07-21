@@ -1,0 +1,669 @@
+{
+	"info": {
+		"_postman_id": "f3e3d879-fee2-4c34-83b6-abd74f2286d9",
+		"name": "event",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17462793"
+	},
+	"item": [
+		{
+			"name": "get-event",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTY3MTA2MiwiZXhwIjoxNjcxOTMwMjYyfQ.rz2HpM8vek62gItW1uzwPOns7TeN8Giv2DNvv-QIV-ae2oOUrU2fGZBVSsxBdKWhtKstZgIbcXBqjp5L5QCJ5Xd0YkB2BsyGgeSlR-XMiQXefFbixUxPfTOQ-R5gRPTaIQSAoN4DsDQ5MI4jDCSRSKFVdeuQH0VdPTtUOCS4sfnPAQRRibkj7MMuA_LqPqphDdzPUBaT4BkHxgsyw3VT59eJCBm_lIQOpzsNIizt4aPRh2ueTtw18Bz7NxoMKQGefYA0N7FREM0EJzn1bVOzg_ZMaI8DTPzfSshl6hF90qxMX-xvrwuxpuwxDQf1IXxg4a5ZogcuwIOdkwOM2QXqhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/event?eventId=639aa01681213436eccaed63",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"event"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "639aa01681213436eccaed63"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get-event",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"event"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "763"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2fb-5itoVe7EW39qu4J/kkRbqYUBOwg\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 04:19:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"isOnline\": true,\n        \"_id\": \"639a9ff081213436eccaed62\",\n        \"name\": \"event name\",\n        \"startDateTime\": \"2022-10-11T18:30:00.000Z\",\n        \"lastDateTime\": \"2022-12-11T18:30:00.000Z\",\n        \"location\": \"Station Road,Pune\",\n        \"description\": \" Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content\",\n        \"timeZone\": \"(GMT+5:30)\",\n        \"__v\": 0\n    },\n    {\n        \"isOnline\": true,\n        \"_id\": \"639aa01681213436eccaed63\",\n        \"name\": \"event name\",\n        \"startDateTime\": \"2022-10-11T18:30:00.000Z\",\n        \"lastDateTime\": \"2022-12-11T18:30:00.000Z\",\n        \"location\": \"Station Road,Pune\",\n        \"description\": \" Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content\",\n        \"timeZone\": \"(GMT+5:30)\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post-event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTY3MTA2MiwiZXhwIjoxNjcxOTMwMjYyfQ.rz2HpM8vek62gItW1uzwPOns7TeN8Giv2DNvv-QIV-ae2oOUrU2fGZBVSsxBdKWhtKstZgIbcXBqjp5L5QCJ5Xd0YkB2BsyGgeSlR-XMiQXefFbixUxPfTOQ-R5gRPTaIQSAoN4DsDQ5MI4jDCSRSKFVdeuQH0VdPTtUOCS4sfnPAQRRibkj7MMuA_LqPqphDdzPUBaT4BkHxgsyw3VT59eJCBm_lIQOpzsNIizt4aPRh2ueTtw18Bz7NxoMKQGefYA0N7FREM0EJzn1bVOzg_ZMaI8DTPzfSshl6hF90qxMX-xvrwuxpuwxDQf1IXxg4a5ZogcuwIOdkwOM2QXqhg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Anmol kumar/Downloads/pexels-anete-lusina-5240544.jpg"
+						},
+						{
+							"key": "name",
+							"value": "event name testing",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "xych hjjhv ",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "pune,india",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "timeZone",
+							"value": "(GMT+5:30)",
+							"type": "text"
+						},
+						{
+							"key": "isOnline",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"event"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post-event(unauthorized)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastDateTime\": \"2022-12-11T18:30:00.000Z\",\r\n    \"startDateTime\": \"2022-10-11T18:30:00.000Z\",\r\n    \"name\": \"event name\",\r\n    \"location\": \"Station Road,Pune\",\r\n    \"description\": \" Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content\",\r\n    \"timeZone\": \"(GMT+5:30)\",\r\n    \"isOnline\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"event"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3e-UOyurfnvjjeW54R5xH/CA57SB/c\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 04:18:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 401,\n    \"message\": \"unauthorized :: [object Object]\"\n}"
+				},
+				{
+					"name": "post-event",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastDateTime\": \"2022-12-11T18:30:00.000Z\",\r\n    \"startDateTime\": \"2022-10-11T18:30:00.000Z\",\r\n    \"name\": \"event name\",\r\n    \"location\": \"Station Road,Pune\",\r\n    \"description\": \" Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content\",\r\n    \"timeZone\": \"(GMT+5:30)\",\r\n    \"isOnline\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"event"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "380"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17c-Ob2IoVWmmc5/jekJ3F+hSSDej8I\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 04:18:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"isOnline\": true,\n    \"_id\": \"639aa01681213436eccaed63\",\n    \"name\": \"event name\",\n    \"startDateTime\": \"2022-10-11T18:30:00.000Z\",\n    \"lastDateTime\": \"2022-12-11T18:30:00.000Z\",\n    \"location\": \"Station Road,Pune\",\n    \"description\": \" Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content\",\n    \"timeZone\": \"(GMT+5:30)\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "post-event(with-image)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTY3MTA2MiwiZXhwIjoxNjcxOTMwMjYyfQ.rz2HpM8vek62gItW1uzwPOns7TeN8Giv2DNvv-QIV-ae2oOUrU2fGZBVSsxBdKWhtKstZgIbcXBqjp5L5QCJ5Xd0YkB2BsyGgeSlR-XMiQXefFbixUxPfTOQ-R5gRPTaIQSAoN4DsDQ5MI4jDCSRSKFVdeuQH0VdPTtUOCS4sfnPAQRRibkj7MMuA_LqPqphDdzPUBaT4BkHxgsyw3VT59eJCBm_lIQOpzsNIizt4aPRh2ueTtw18Bz7NxoMKQGefYA0N7FREM0EJzn1bVOzg_ZMaI8DTPzfSshl6hF90qxMX-xvrwuxpuwxDQf1IXxg4a5ZogcuwIOdkwOM2QXqhg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Anmol kumar/Downloads/pexels-anete-lusina-5240544.jpg"
+								},
+								{
+									"key": "name",
+									"value": "event name testing",
+									"contentType": "application/json",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "xych hjjhv ",
+									"contentType": "application/json",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "pune,india",
+									"contentType": "application/json",
+									"type": "text"
+								},
+								{
+									"key": "timeZone",
+									"value": "(GMT+5:30)",
+									"type": "text"
+								},
+								{
+									"key": "isOnline",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"event"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "207"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cf-E6iU/nl/xGwXe6LJzh4YK2fzVj8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 Dec 2022 01:32:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"isOnline\": true,\n    \"_id\": \"63a3b3c92f87fb3380ae733b\",\n    \"name\": \"event name testing\",\n    \"location\": \"pune,india\",\n    \"description\": \"xych hjjhv \",\n    \"timeZone\": \"(GMT+5:30)\",\n    \"coverImg\": \"pexels-anete-lusina-5240544.jpg\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "put-event",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lastDateTime\": \"2022-12-11T18:30:00.000Z\",\r\n    \"startDateTime\": \"2022-10-11T18:30:00.000Z\",\r\n    \"name\": \"event name edit\",\r\n    \"location\": \"Station Road,Pune\",\r\n    \"description\": \" Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content\",\r\n    \"timeZone\": \"(GMT+5:30)\",\r\n    \"isOnline\":true,\r\n    \"eventId\" :\"639aa01681213436eccaed63\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"event"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "put-event",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastDateTime\": \"2022-12-11T18:30:00.000Z\",\r\n    \"startDateTime\": \"2022-10-11T18:30:00.000Z\",\r\n    \"name\": \"event name edit\",\r\n    \"location\": \"Station Road,Pune\",\r\n    \"description\": \" Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content\",\r\n    \"timeZone\": \"(GMT+5:30)\",\r\n    \"isOnline\":true,\r\n    \"eventId\" :\"639aa01681213436eccaed63\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"event"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "385"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"181-6m73jb6AQ+AORvjx5lvIvhncTVQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 04:22:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"isOnline\": true,\n    \"_id\": \"639aa01681213436eccaed63\",\n    \"name\": \"event name edit\",\n    \"startDateTime\": \"2022-10-11T18:30:00.000Z\",\n    \"lastDateTime\": \"2022-12-11T18:30:00.000Z\",\n    \"location\": \"Station Road,Pune\",\n    \"description\": \" Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content\",\n    \"timeZone\": \"(GMT+5:30)\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "delete-event",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventId\" :\"639a9ff081213436eccaed62\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"event"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete-event",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"eventId\" :\"639a9ff081213436eccaed62\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"event"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-LHGfB8a/L8U4JXgraKe9kgUblbU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 04:21:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"event deleted\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "upload-image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Anmol kumar/Pictures/Screenshot 2022-10-26 211116.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/event/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"event",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

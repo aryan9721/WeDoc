@@ -1,0 +1,554 @@
+{
+  "info": {
+    "_postman_id": "e6f83b20-f79b-4cd8-bdeb-ae36fd90093f",
+    "name": "user",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17462793"
+  },
+  "item": [
+    {
+      "name": "register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"exampleabhi@mail.com\",\"location\": \"PCMC Pune\",\"name\": \"Abhishek\",\"designation\": \"MBBS DNB (Gen Surgery)\",\"successfulOT\": 4,\"yoe\":10,\"patientRecovered\":20,\"certificatesAchieved\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/user/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "user", "register"]
+        }
+      },
+      "response": [
+        {
+          "name": "register(success)",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"example@mail.com\",\"location\": \"PCMC Pune\",\"name\": \"\",\"designation\": \"MBBS DNB (Gen Surgery)\",\"successfulOT\": 4,\"yoe\":10,\"patientRecovered\":20,\"certificatesAchieved\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/user/register",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user", "register"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "64"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"40-my1g2mZnjjaJLpf1+Qed5yYwk/A\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 15 Dec 2022 02:48:41 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"email\": \"example@mail.com\",\n    \"userId\": \"639a8b083dcb5d09a4f74e3a\"\n}"
+        },
+        {
+          "name": "register(exists)",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"example@mail.com\",\"location\": \"PCMC Pune\",\"name\": \"\",\"designation\": \"MBBS DNB (Gen Surgery)\",\"successfulOT\": 4,\"yoe\":10,\"patientRecovered\":20,\"certificatesAchieved\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/user/register",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user", "register"]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "46"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2e-B/K2cc9AIMEZAEGw4Do9WbBaPwI\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 15 Dec 2022 02:49:37 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"user already exist \",\n    \"status\": 400\n}"
+        }
+      ]
+    },
+    {
+      "name": "signin",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"email\": \"example@mail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/user/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "user", "login"]
+        }
+      },
+      "response": [
+        {
+          "name": "signin",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"email\": \"example@mail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/user/login",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user", "login"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "116"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"74-cxhE+5lZtSBja0g8ceygEiBywow\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 15 Dec 2022 02:51:02 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"hash\": \"7da07898ad0d5afbd3a477d0c5cfd03fbeb77d9515e855ce7fff62ed87a9c341.1671072842453\",\n    \"email\": \"example@mail.com\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "verifyOTP",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \r\n    \"hash\": \"43ae7b6833b19333e2f0071af8d572a33ca5312f73506be311fa3117b6555f13.1671671208836\",\r\n    \"email\": \"example@mail.com\",\r\n    \"otp\": \"915915\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/user/verifyOTP",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "user", "verifyOTP"]
+        }
+      },
+      "response": [
+        {
+          "name": "verifyOTP",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"hash\": \"7da07898ad0d5afbd3a477d0c5cfd03fbeb77d9515e855ce7fff62ed87a9c341.1671072842453\",\r\n    \"email\": \"example@mail.com\",\r\n    \"otp\": \"175520\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/user/verifyOTP",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user", "verifyOTP"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1045"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"415-LpLrfxd2cOaZDImU1lhT0vH/voI\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 15 Dec 2022 02:51:47 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"x-api-key\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw\",\n    \"refresh-token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6dHJ1ZSwiaWF0IjoxNjcxMDcyNzA3LCJleHAiOjE2NzExNTkxMDd9.a42ZVPOQnSPf2AADX-YhL86eDfw43NZu07_OJr40PbKx9c3jNmzJXi_Juf84oUBC6srZgGCgeJ7m-CEewH972C7Zvcly0pklfgqkTGjHuiOg4P_etFrTwRDB3f-I2GQHQ41vmw95mGHTSMI7MNhbgSm-6CG-1GY4Qe9N060zdroh05Q_nIRdHl9tf87bsNn55rwHKNkYgNaFeK9IoimBw4gimNKiYj5JlF3uS8j9t-XsO1_1o6HpTXmN3bbP0sJzW0UzBXxPTcPxL9K4eZ7QkSfh1Ld-8NqmI6I6fqERzEYGYroSeKzoeHQoJgr7FI6eCTjAiXmoj3e0UFTevurt3Q\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "profile",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:4000/api/user/profile",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "user", "profile"]
+        }
+      },
+      "response": [
+        {
+          "name": "profile",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzlhOGIwODNkY2I1ZDA5YTRmNzRlM2EiLCJpc1JlZnJlc2hUb2tlbiI6ZmFsc2UsImlhdCI6MTY3MTA3MjcwNiwiZXhwIjoxNjcxMzMxOTA2fQ.KMpNC2Sc6_KzNJmMZhQFqAnyga2gFn10UvZCaTc7pB_jfETRZidUq9_nn_h_M2PVTDcb2syrq5_kJdPsoyPCjR0EAWecNHH9ghxwGOpiqm3KiRnlflE_TpR7NwxbVQKBX4Idi9RK6GgLUiS58GD-2KzXIwc6X7GLbVEvlUuH-_rZ1Vtb6jI38knJ0dV989u8BL3y7EU6hlSDlZaIRTM2A4uemxHM3wV_RKQbaoJXC8PwrdXE_zRX4tNDAUCV5-ibhz2EVobw4JJLFkuPJJ9nN72se4P0A6s7WzZDdUMDK6kdhTZF0L1l9LQ4MscjHBfJr1ZhBP0Dk26wIl-SRaPcKw",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:4000/api/user/profile",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user", "profile"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "214"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"d6-Uqp1+yWX/nTfm6o3gSgVteczBT0\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 15 Dec 2022 02:52:15 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_id\": \"639a8b083dcb5d09a4f74e3a\",\n    \"email\": \"example@mail.com\",\n    \"location\": \"PCMC Pune\",\n    \"name\": \"\",\n    \"designation\": \"MBBS DNB (Gen Surgery)\",\n    \"successfulOT\": 4,\n    \"yoe\": 10,\n    \"patientRecovered\": 20,\n    \"certificatesAchieved\": 2,\n    \"__v\": 0\n}"
+        }
+      ]
+    },
+    {
+      "name": "superadmin-login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "super-admin-token",
+            "value": "YWRtaW46cGFzc3dvcmQ=",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:4000/api/user/login/superadmin",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "user", "login", "superadmin"]
+        }
+      },
+      "response": [
+        {
+          "name": "superadmin-login",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "super-admin-token",
+                "value": "YWRtaW46YWRtaW4=",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:4000/api/user/login/superadmin",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user", "login", "superadmin"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "35"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"23-pJje6c2oXf/gzzXRYbUAHi/cgWE\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 15 Dec 2022 03:48:36 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"super admin logged in\"\n}"
+        },
+        {
+          "name": "superadmin-login(401)",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "super-admin-token",
+                "value": "YWRtaW46YWRtaW4",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:4000/api/user/login/superadmin",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user", "login", "superadmin"]
+            }
+          },
+          "status": "Unauthorized",
+          "code": 401,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "27"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1b-ptDm3ggC53pgcLgMnSH4sPfBUYY\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 15 Dec 2022 03:48:46 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Invalid Token\"\n}"
+        }
+      ]
+    }
+  ]
+}
